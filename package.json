@@ -6,7 +6,8 @@
   "scripts": {
     "client-install": "yarn install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "seeder": "node seeder -i"
   },
   "repository": "https://github.com/ademoladebayo/Mern",
   "author": "Demola Adebayo",

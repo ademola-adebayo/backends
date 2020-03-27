@@ -8,20 +8,26 @@ const {
   getBootcampsByUserId,
   createBootcamp,
   updateBootcamp,
-  deleteBootcamp
+  deleteBootcamp,
+  getBootcampsInRadius
 } = require('../../controllers/bootcamps');
 const { placeValidator } = require('../../validators/auth');
 
 const { runValidation } = require('../../validators');
 
 router.route('/user/:uid').get(getBootcampsByUserId);
+
+router
+  .route('/bootcamps/radius/:zipcode/:distance')
+  .get(getBootcampsInRadius);
+  
 router
   .route('/bootcamps')
   .get(getBootcamps)
   .post(runValidation, createBootcamp);
 
 router
-.route('/bootcamps/:id')
+  .route('/bootcamps/:id')
   .get(getBootcampById)
   .patch(
     [

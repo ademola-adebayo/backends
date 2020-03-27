@@ -1,5 +1,4 @@
-[
-	{
+[{
 		"_id": "5d713995b721c3bb38c1f5d0",
 		"user": "5d7a514b5d2c12c7449be045",
 		"name": "Devworks Bootcamp",
@@ -12,6 +11,7 @@
 		"housing": true,
 		"jobAssistance": true,
 		"jobGuarantee": false,
+		"cv": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/400px-Empire_state_Building_%28aerial_view%29.jpg",
 		"acceptGi": true
 	},
 	{
@@ -27,6 +27,7 @@
 		"housing": false,
 		"jobAssistance": true,
 		"jobGuarantee": false,
+		"cv": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/400px-Empire_state_Building_%28aerial_view%29.jpg",
 		"acceptGi": true
 	},
 	{
@@ -42,6 +43,7 @@
 		"housing": false,
 		"jobAssistance": false,
 		"jobGuarantee": false,
+		"cv": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/400px-Empire_state_Building_%28aerial_view%29.jpg",
 		"acceptGi": false
 	},
 	{
@@ -62,6 +64,7 @@
 		"housing": false,
 		"jobAssistance": true,
 		"jobGuarantee": true,
+		"cv": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/10/Empire_State_Building_%28aerial_view%29.jpg/400px-Empire_state_Building_%28aerial_view%29.jpg",
 		"acceptGi": true
 	}
 ]
