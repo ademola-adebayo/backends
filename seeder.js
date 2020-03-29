@@ -3,7 +3,6 @@ const mongoose = require('mongoose');
 require('colors');
 require('dotenv').config();
 
-
 //Load models
 const Bootcamp = require('./models/Bootcamp');
 
