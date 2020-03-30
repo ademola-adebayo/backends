@@ -2,16 +2,18 @@ const express = require('express');
 const morgan = require('morgan');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-require('colors');
 
+require('colors');
 require('dotenv').config();
 
 const errorHandler = require('./middleware/error');
 const logger = require('./middleware/logger');
 const connectDBWithRetry = require('./config/db');
+
+
 const app = express();
 
-//add app middlewares
+//add app middlewares and log routes
 if (process.env.NODE_ENV === 'development') {
   app.use(morgan('dev'));
 }
@@ -22,6 +24,7 @@ app.use((error, req, res, next) => {
     return next(error);
   }
 
+
   res.status(error.code || 500).json({
     message: error.message || 'An unknown error occured!'
   });
@@ -31,7 +34,7 @@ app.use((error, req, res, next) => {
 if (process.env.NODE_ENV == 'development') {
   app.use(
     cors({
-      origin: `http://localhost:3000`
+      origin: `${process.env.CLIENT_URL}`
     })
   );
 }
